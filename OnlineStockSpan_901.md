@@ -1,10 +1,10 @@
-- Time Complexity: O(1) on average for each call to next, because each element is pushed and popped from the stack at most once.
-- Space Complexity: O(n) for storing elements in the stack where n is the number of prices recorded.
+- **Time Complexity:** O(1) on average for each call to next, because each element is pushed and popped from the stack at most once.
+- **Space Complexity:** O(n) for storing elements in the stack where n is the number of prices recorded.
 - https://github.com/AlgoMaster-io/leetcode-solutions/blob/main/java/online-stock-span.md
-- KP:
+- **KP:**
     - See how logic using stack is formed to cover all previous elements to compare with current
 
-```
+```java
 class StockSpanner {
 
     Stack<int[]> stockSpan; // each stack element is array of [price, span]
