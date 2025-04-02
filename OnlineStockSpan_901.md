@@ -4,6 +4,7 @@
 // KP:
 //   - See how logic using stack is formed to cover all previous elements to compare with current
 
+```
 class StockSpanner {
 
     Stack<int[]> stockSpan; // each stack element is array of [price, span]
@@ -31,3 +32,5 @@ class StockSpanner {
  * StockSpanner obj = new StockSpanner();
  * int param_1 = obj.next(price);
  */
+
+```
