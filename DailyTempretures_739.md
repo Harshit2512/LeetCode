@@ -1,10 +1,10 @@
 - **Time Complexity:** O(n), each element is pushed and popped at most once.
 - **Space Complexity:** O(n), due to the stack storing up to n indices.
-- Key Points: 
+- **Key Points:** 
     - Didn't actually store the temp value but stored index at which warmer temp evalution required
     - How stack was used to avoid two nested for loops to reduce time complexity
 
-```
+```java
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int T = temperatures.length;
