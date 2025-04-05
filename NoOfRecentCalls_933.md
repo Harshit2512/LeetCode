@@ -1,5 +1,5 @@
-**Time Complexity:** Each ping operation is O(1) on average since we are performing operations that affect only the current and the oldest timestamps.
-**Space Complexity:** O(n) where n is the number of timestamps in the last 3000 milliseconds. (push each ping ele to queue)
+- **Time Complexity:** Each ping operation is O(1) on average since we are performing operations that affect only the current and the oldest timestamps.
+- **Space Complexity:** O(n) where n is the number of timestamps in the last 3000 milliseconds. (push each ping ele to queue)
 
 ```java
 
