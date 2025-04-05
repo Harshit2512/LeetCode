@@ -1,6 +1,6 @@
-**Time Complexity:** O(n), where n is the number of people in the queue. Each person is pushed and popped from the stack at most once.
-**Space Complexity:** O(n), for the stack that keeps track of indices.
-**Key Points:**
+- **Time Complexity:** O(n), where n is the number of people in the queue. Each person is pushed and popped from the stack at most once.
+- **Space Complexity:** O(n), for the stack that keeps track of indices.
+- **Key Points:**
     - maintain a stack to keep only taller people bcz they may be seen by other people in the future ele iteration 
 
 ```java
