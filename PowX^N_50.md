@@ -1,6 +1,6 @@
-**Time Complexity:** O(log n): Recursive function halves n at each call.
-**Space Complexity:** O(log n): Call stack space for recursion.
-**Key Points:**
+- **Time Complexity:** O(log n): Recursive function halves n at each call.
+- **Space Complexity:** O(log n): Call stack space for recursion.
+- **Key Points:**
     - dividing the problem size by half at each step, leading to a more efficient solution.
     - if n % 2 == 1, means n is odd. So multiply result with addition x
 
@@ -33,7 +33,7 @@ class Solution {
     }   
 
 
-// ------------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------
         // // Approach: Iterative Binary Exponentiation (Optimal) using bit manipulation to identify N is odd or not
         // // Time Complexity: O(log n): The powering operation uses logarithmic number of multiplications.
         // // Space Complexity: O(1): This approach does not use additional space.
@@ -63,6 +63,6 @@ class Solution {
         // return result;
         
     //}
-    
+
 }
 ```
