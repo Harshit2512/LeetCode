@@ -1,6 +1,6 @@
-**Time Complexity:** O(N) for both average and worst case due to the linear pass to fill buckets and the linear pass to find the maximum gap.
-**Space Complexity:** O(N) due to the space used for the buckets.
-**Key Points:**
+- **Time Complexity:** O(N) for both average and worst case due to the linear pass to fill buckets and the linear pass to find the maximum gap.
+- **Space Complexity:** O(N) due to the space used for the buckets.
+- **Key Points:**
     - Find min and max from nums to calculate bucket size and count
     - bucket size = (max - min)/nums.length - 1
     - bucket count = (max - min)/bucketSize + 1
