@@ -1,6 +1,6 @@
 - **Time Complexity:** O(log n), at each step problem space is divided into half (Binary Search)
 - **Space Complexity:** O(1), no extra space
-- **Key Points: **
+- **Key Points:**
     - Find mid, if right is less than mis then right half is rotated and min ele could be right side, set left to mid + 1 to iterate right half and vice versa
 
 ```java
