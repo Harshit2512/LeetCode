@@ -3,6 +3,7 @@
 **Key Points:**
     - This is pre order tree traversal
     - For recursive approach, swap the left and right child of parent t1 and t2 nodes to check mirror
+    - For iterative approach, use Queue DS with swap roles of nodes
 
 ```java
 /**
