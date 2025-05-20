@@ -1,6 +1,6 @@
 - **Time Complexity:** O(n), need to iterate all n nodes in the tree
 - **Space Complexity:** O(n), where n is the number of nodes in the queue at any level (widest point of the tree). For a perfectly balanced tree, this would be approximately h/2 nodes, or n/2/3 in the worst case.
-**Key Points:**
+- **Key Points:**
     - This is pre order tree traversal
     - For recursive approach, swap the left and right child of parent t1 and t2 nodes to check mirror
     - For iterative approach, use Queue DS with swap roles of nodes
