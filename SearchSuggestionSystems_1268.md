@@ -5,6 +5,7 @@
     - Get all next three lexicographical products from window range for each prefix chars
 
 ```java
+
 class Solution {
     public List<List<String>> suggestedProducts(String[] products, String searchWord) {
         Arrays.sort(products); // Sort array for lexicographical order
