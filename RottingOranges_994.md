@@ -1,5 +1,5 @@
-- **Time Complexity:** (O(m *n)), where (m) is the number of rows and (n) is the number of columns. Each cell in the grid is processed at most once.
-- **Space Complexity:** (O(m * n)) for the queue used in BFS.
+- **Time Complexity:** O(m *n), where (m) is the number of rows and (n) is the number of columns. Each cell in the grid is processed at most once.
+- **Space Complexity:** O(m * n) for the queue used in BFS.
 - **Key Points:**
     - Load queue with initial all rotten oranges and find no of fresh oranges
     - Poll a queue for all rotten oranges loaded in a minute (till queue size) and get all adj rotten oranges and load then in queue
