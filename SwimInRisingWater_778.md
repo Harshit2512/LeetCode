@@ -25,7 +25,6 @@ class Solution {
 
             // if bottom right corner is reached then return time;
             if (x == N - 1 && y == N - 1) return time;
-
             if (visited[x][y]) continue;
             
             // Traverse all neighbors
