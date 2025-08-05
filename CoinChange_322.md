@@ -12,6 +12,7 @@ class Solution {
 
         // amount + 1 is for setting dp array size
         int[] dp = new int[amount + 1];
+        // amount + 1 is the maximum coins that can be choosen if has all 1s to make upto the amount (target)  
         Arrays.fill(dp, amount + 1);
         dp[0] = 0; // Base case: zero coins needed for zero amount
 
