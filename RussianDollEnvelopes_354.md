@@ -2,7 +2,7 @@
 - **Space Complexity:** O(n) for storing the LIS.
 - **Key Points:**
     - Sort input array - sort by width in ASC order, if width is same then sort by height in DESC order
-    - Create a dynamic list dp to store the current best sequence of increasing envelope heights (we will apply LIS here).
+    - Create a dynamic list dp to store the current best sequence of increasing envelope heights (we will apply LIS here)
     - find the index where height stored in DP list using binary search. Based on index, decide where should height be inserted/updated in DP list
     - If index is equal size of DP list that means this height is highest among all heights found till now and insert at the end. Otherwise update height at existing index
 
