@@ -1,5 +1,5 @@
 - **Time Complexity:** O(n log n) for sorting and binary search operations.
-- **Space Complexity:** O(n) for storing the LIS.
+- **Space Complexity:** O(n) for storing the LIS
 - **Key Points:**
     - Sort input array - sort by width in ASC order, if width is same then sort by height in DESC order
     - Create a dynamic list dp to store the current best sequence of increasing envelope heights (we will apply LIS here)
