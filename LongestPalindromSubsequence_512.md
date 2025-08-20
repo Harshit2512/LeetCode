@@ -1,7 +1,7 @@
 - **Time Complexity:** O(n^2) for filling the entire dp table.
 - **Space Complexity:** O(n^2) for the dp table storage.
 - **Key Points:**
-    - Bottom-up dynamic programming approach
+    - Bottom-up dynamic programming approach - can also be solved as extention of longest common subsequence problem with two strings
     - Subsequence(can drop any char but order remains same) vs substring(can't drop any char):
     - All chars alone make a palindrom subsequence of 1. So fill matrix diagonal with 1
     - len is the length of substring we take to find palindrom SS. start with 2 (min 2 char unto full string length)
