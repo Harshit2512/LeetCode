@@ -1,1 +1,1 @@
-LPS
+LPS -> extension of LCS
