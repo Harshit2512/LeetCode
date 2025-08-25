@@ -13,7 +13,7 @@ class Solution {
         boolean[] dp = new boolean[s.length() + 1];
         dp[0] = true; // Base case: an empty string is "breakable"
         
-        // Check each possible end-point for substrings.
+        // Check each possible end-point for substrings
         // end = outer boundary of substring
         for (int end = 1; end <= s.length(); end++) {
             // start = start position of substring
