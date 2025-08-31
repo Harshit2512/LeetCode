@@ -1,5 +1,5 @@
 - **Time complexity:** O(n) each node is visited once
-- **Space complexity:** O(h) recursion stack (h = tree height), worst-case O(n) for skewed tree.
+- **Space complexity:** O(h) recursion stack (h = tree height), worst-case O(n) for skewed tree
 - **Key Points:**
     - (word doc) Approach: Geedy DFS -> Why Greedy? Leaf node enforces parent node to place camera to be covered
     - Leaves return 0. Parents of leaves get forced to place cameras. Higher nodes only place cameras if absolutely necessary.
@@ -27,7 +27,7 @@
 
 // 0 = NOT covered (this node needs its parent to place a camera),
 // 1 = HAS CAMERA (we placed a camera at this node),
-// 2 = COVERED (no camera here, but one of its children has a camera).
+// 2 = COVERED (no camera here, but one of its children has a camera)
 
 class Solution {
     int cameras = 0;
