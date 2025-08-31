@@ -1,4 +1,4 @@
-- **Time complexity:** O(n) each node is visited once.
+- **Time complexity:** O(n) each node is visited once
 - **Space complexity:** O(h) recursion stack (h = tree height), worst-case O(n) for skewed tree.
 - **Key Points:**
     - (word doc) Approach: Geedy DFS -> Why Greedy? Leaf node enforces parent node to place camera to be covered
