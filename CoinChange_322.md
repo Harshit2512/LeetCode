@@ -1,5 +1,5 @@
 - **Time Complexity:** O(S * n) where S is the amount and n is the number of coins.
-- **Space Complexity:** O(S) for the DP table.
+- **Space Complexity:** O(S) for the DP table
 - **Key Points:**
     - Optimized approach using dynamic programming - Pattern - Target is given and asked to find optimum selection  which sum up to target
     - Define DP array of size amount
