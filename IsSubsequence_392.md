@@ -1,5 +1,5 @@
 - **Time Complexity:** O(n + m), where n is the length of s and m is the length of t.
-- **Space Complexity:** O(1), no additional space is used.
+- **Space Complexity:** O(1), no additional space is used
 - **Key Points:**
     - Two pointers approach, define index i and j for string s and t respectively
     - Iterate both strings, if char at index matches then increament both index else increament only t string index
