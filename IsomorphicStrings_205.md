@@ -1,4 +1,4 @@
-- **Time Complexity:** O(n), where n is the length of the string. We iterate through each character once.
+- **Time Complexity:** O(n), where n is the length of the string. We iterate through each character once
 - **Space Complexity:** O(1), specifically O(26) if considering distinct lowercase letters. In practice, the space used by hash maps is relative to the character set.
 - **Key Value:**
     - Create two hash maps.
