@@ -1,5 +1,5 @@
 - **Time Complexity:** O(1) for both encode and decode methods, on average
-- **Space Complexity:** O(N), where N is the number of URLs encoded. We store each URL once.
+- **Space Complexity:** O(N), where N is the number of URLs encoded. We store each URL once
 - **Key Points:**
     - Approach: HashMap with Random and Base62 Encoding
     - Generate random 6 character long unique key using base62 alphanumeric string and put [random key, longUrl] in map
