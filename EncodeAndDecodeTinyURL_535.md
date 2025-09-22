@@ -42,7 +42,7 @@ public class Codec {
     }
 }
 
-// Your Codec object will be instantiated and called as such:
+// Your Codec object will be instantiated and called as such
 // Codec codec = new Codec();
 // codec.decode(codec.encode(url));
 ```
