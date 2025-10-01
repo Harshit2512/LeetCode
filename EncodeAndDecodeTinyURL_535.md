@@ -34,7 +34,7 @@ public class Codec {
         return BASE_URL + key;  
     }
 
-    // Decodes a shortened URL to its original URL.
+    // Decodes a shortened URL to its original URL
     public String decode(String shortUrl) {
         // Find longUrl by key from map
         String key = shortUrl.replace(BASE_URL, "");
