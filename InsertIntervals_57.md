@@ -1,5 +1,5 @@
 - **Time Complexity:** O(n),  We make a single pass over the intervals
-- **Space Complexity:** O(n), We store the result in a new list which, in the worst case, could be as large as the input.
+- **Space Complexity:** O(n), We store the result in a new list which, in the worst case, could be as large as the input
 - **Key Points:**
     - Add all non overlapping intervals that comes before new interval
     - Merge overlapping intervals and add it to result
