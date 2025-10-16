@@ -1,7 +1,7 @@
 - **Time Complexity:** O(N log N), N for iteration of intervals and N LogN for sorting array => N + N LogN = N (1 + LogN) = N LogN
 - **Space Complexity:** O(1), no additional space required
 - **Key Points:**
-    - Sort the intervals by the end time to efficiently find the optimal position to 'cut' the intervals.
+    - Sort the intervals by the end time to efficiently find the optimal position to 'cut' the intervals
     - Initialize a counter for removals and set a variable for the end of the last added interval.
     - Traverse the sorted intervals and check if the current interval overlaps with the last non-overlapping interval.
     - If overlapped, increment the removal counter; otherwise, update the end point to the current interval’s end time.
