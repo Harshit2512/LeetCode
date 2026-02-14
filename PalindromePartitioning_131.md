@@ -4,6 +4,7 @@
     - If start index is equal to end of the string then add current to result
     - From start index, start checking if char at index and then substring is palindrom or not
     - If palindrom then add substring to current and then backtrack and undo last choice
+    - https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=19
 
 ```java
 class Solution {
