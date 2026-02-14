@@ -1,7 +1,10 @@
 - **Time Complexity:** O(n * 2^n), where n is the length of the string. This complexity is due to the fact that each character might either start its own substring or extend a previous one, leading to exponential possibilities.
 - **Space Complexity:** O(n), where n is the depth of the recursion. The space is used by the recursive call stack.
 - **Key Points:**
-    - Take index and check if palindrom, if yes then make partition and keep repeating process for substring taking single char, two char,...until last char
+    - If start index is equal to end of the string then add current to result
+    - From start index, start checking if char at index and then substring is palindrom or not
+    - If palindrom then add substring to current and then backtrack and undo last choice
+    - https://www.youtube.com/watch?v=WBgsABoClE0&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=19
 
 ```java
 class Solution {
