@@ -1,7 +1,7 @@
-**Time Complexity:** O(logN), best and avg case
+- **Time Complexity:** O(logN), best and avg case
                   O(n/2) + O(logN), if elements are high and many duplicates and need to shrink window at huge extent
-**Space Complexity:** O(1), no additional space
-**Approach:** Striver
+- **Space Complexity:** O(1), no additional space
+- **Approach:** Striver
     - https://www.youtube.com/watch?v=w2G2W8l__pc&t=4s
     - Extension of Search in Rotated Sorted Array 1 problem
     - Binary search with window shrink when low and high are same and which half to remove is unconclusive
