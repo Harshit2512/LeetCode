@@ -1,27 +1,34 @@
 - **Time Complexity:** O(log n), at each step problem space is divided into half (Binary Search)
 - **Space Complexity:** O(1), no extra space
-- **Key Points:**
-    - Find mid, if right is less than mis then right half is rotated and min ele could be right side, set left to mid + 1 to iterate right half and vice versa
+- **Approach:** Binary search with uniques - Striver
+    - Find mid and check which half is sorted
+    - Once sorted half is found, take min from sorted half before removing it
+    - Perform BS in unsorted half and repeat process
 
 ```java
+
 class Solution {
     public int findMin(int[] nums) {
-        int left = 0;
-        int right = nums.length - 1;
+        int min = Integer.MAX_VALUE;
+        int low = 0;
+        int high = nums.length - 1;
 
-        if (nums.length == 1) return nums[0];
+        while (low <= high) {
 
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-
-            if (nums[mid] > nums[right]) { // min could be right side
-                left = mid + 1; // move left to iterate in right half
+            int mid = (low + high)/2;
+            // check if left half is sorted, if sorted then take min and remove left half
+            if (nums[low] <= nums[mid]) {
+                min = Math.min(nums[low], min);
+                low = mid + 1;
             } else {
-                right = mid; // move right to iterate in left half
+                // right half is sorted
+                min = Math.min(nums[mid], min);
+                high = mid - 1;
             }
         }
 
-        return nums[left];
+        return min;
     }
 }
+
 ```
