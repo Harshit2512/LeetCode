@@ -46,5 +46,38 @@ class Solution {
         levelOrderTraversal(node.right, depth + 1, result); // next level traversal for right node
         
     }
+
+
+    // Iterative approach
+
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        // Using iterative approach - with Queue
+
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        List<List<Integer>> result = new ArrayList<>();
+
+        // Edge case
+        if (root == null) return result; 
+
+        // Add first node (root) in the queue
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+
+            // Size of the queue will indicate the level of the tree
+            int levelNo = queue.size();
+            List<Integer> subList = new ArrayList<>();
+
+            for (int i = 0; i < levelNo; i++) {
+                if (queue.peek().left != null) queue.offer(queue.peek().left); 
+                if (queue.peek().right != null) queue.offer(queue.peek().right);
+                subList.add(queue.poll().val);
+            }
+
+            result.add(subList);
+        }
+
+        return result;
+    }
 }
 ```
