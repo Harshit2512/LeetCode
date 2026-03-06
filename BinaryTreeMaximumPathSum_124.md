@@ -1,7 +1,11 @@
 - **Time Complexity:** O(N) since each node is processed exactly once.
 - **Space Complexity:** O(H) where H is the height of the tree for the recursion stack.
 - **Key Points:**
-    - For current node, return max sum of either left or right child and calculate path sum for current node considering it's children with max path sum
+    - Approach: Extension of maximum depth of BT and maximum diameter of BT
+    - Calculate path sum recursively by making a reverse U from each node and go up until root
+    - Calculate the left path sum from current node, if sum is negative then just return 0 (bcz negative sum will reduce overall sum)
+    - Calculate the right path sum from current node, if sum is negative then just return 0 (bcz negative sum will reduce overall sum)
+    - To propogate the max path sum from current node, take the sum of node's val and max of left or right
 
 ```java
 /**
