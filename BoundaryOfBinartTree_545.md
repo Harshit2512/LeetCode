@@ -1,22 +1,13 @@
-
+- **Time Complexity:** O(H) -> left height + O(H) -> right height + O(W) -> leaf nodes ~= O(N)
+- **Space Complexity:** O(N)
+- **Apporach:**
+    - Interate all the way left nodes until leaf found. Add node to list only if not leaf node 
+    - Iterate leaf nodes only and add in list
+    - Interate all the way right nodes until leaf found. Add nodes in temp list and get them in reverse order. Add node to list only if not leaf node
+    - Premium question asked at multiple good companies
 
 ```java
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
 class Solution {
     public List < Integer > boundaryOfBinaryTree(TreeNode root) {
 
@@ -35,6 +26,8 @@ class Solution {
     void addLeftBoundary(TreeNode root, ArrayList < Integer > result) {
         TreeNode curr = root.left;
 
+        // Why 5 was not added? root node 4 is leaf node and its left and right are null. That's break while loop
+        // Iterate all left nodes until leaf node not found. Add node to list only if not leaf node 
         while (curr != null) {
             if (!isLeaf(curr)) result.add(curr.val);
             if (curr.left != null) curr = curr.left;
@@ -42,6 +35,8 @@ class Solution {
         }
     }
 
+    // Iterate all right nodes until leaf node not found. Add node to list only if not leaf node
+    // Add node values in temp list and get them in reverse order
     void addRightBoundary(TreeNode root, ArrayList < Integer > result) {
         TreeNode curr = root.right;
 
@@ -58,6 +53,7 @@ class Solution {
         }
     }
 
+    // Keep moving down until leaf nodes are found. Add in list only if leaf nodes
     void addLeaves(TreeNode root, ArrayList < Integer > result) {
         if (isLeaf(root)) {
             result.add(root.val);
